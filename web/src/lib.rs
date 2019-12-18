@@ -61,18 +61,24 @@ use std::{cell::RefCell, rc::Rc};
 
 mod bus;
 mod element;
+mod event;
+mod hasher;
 
 pub mod style;
+pub mod subscription;
 pub mod widget;
 
 pub use bus::Bus;
 pub use dodrio;
 pub use element::Element;
+pub use event::Event;
+pub use hasher::Hasher;
 pub use iced_core::{
     Align, Background, Color, Command, Font, HorizontalAlignment, Length,
     VerticalAlignment,
 };
 pub use style::Style;
+pub use subscription::Subscription;
 pub use widget::*;
 
 /// An interactive web application.
